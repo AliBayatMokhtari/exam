@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ali Bayat Mokhtari" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Reen Website</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+          <button class="mt-5" id="button">Click me</button>
+          <p class="mt-5" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, explicabo!</p>
+          <div class="mt-5" id="division"></div>
+          <div style="height: 200px; background-color: blue"></div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+          $("#button").css({
+            "height": "50px",
+            "width": "100%",
+          }).addClass("btn btn-success");
+          $("#text").css({
+            "color": "brown",
+            "font-size": "32px"
+          });
+          $("div.container div#division").css("height", "300px");
+
+          $("button#button").click(function() {
+            $("p#text").toggle();
+          })
+        </script>
+    </body>
+</html>
